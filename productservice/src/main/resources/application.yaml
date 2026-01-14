@@ -1,0 +1,22 @@
+# Product Service Configuration
+server:
+  port: 8081
+
+spring:
+  application:
+    name: productservice
+  
+  # PostgreSQL Database Configuration
+  datasource:
+    url: jdbc:postgresql://localhost:5555/product_db
+    username: itpusr
+    password: itp@168
+    driver-class-name: org.postgresql.Driver
+  
+  # JPA Configuration
+  jpa:
+    hibernate:
+      ddl-auto: update  # Automatically create/update tables
+    show-sql: true      # Show SQL queries in console (useful for learning)
+
+

@@ -1,0 +1,19 @@
+services:
+  gateway-pg-bff:
+    image: postgres:17.5-bullseye
+    container_name: gateway-pg-bff
+    environment:
+      POSTGRES_USER: itpusr
+      POSTGRES_PASSWORD: itp@168
+    ports:
+      - "5555:5432"
+    volumes:
+      - ./init_script/pg_db_service.sql:/docker-entrypoint-initdb.d/pg_db_service.sql
+      - pg_data:/var/lib/postgresql/data
+    networks:
+      - gateway-network
+networks:
+  gateway-network:
+    external: true
+volumes:
+  pg_data:
