@@ -1,0 +1,19 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: authorizationserver
+
+  datasource:
+    url: jdbc:postgresql://localhost:5555/oauth_db
+    username: itpusr
+    password: itp@168
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true

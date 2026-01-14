@@ -12,6 +12,8 @@ services:
       - pg_data:/var/lib/postgresql/data
     networks:
       - gateway-network
+
+
 networks:
   gateway-network:
     external: true

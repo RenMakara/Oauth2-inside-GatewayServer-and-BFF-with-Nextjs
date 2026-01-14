@@ -30,6 +30,9 @@
       <module name="DEVKHMER-OAUTH2-SERVER" options="-parameters" />
       <module name="DEVKHMER-OAUTH2-SERVER.main" options="-parameters" />
       <module name="DEVKHMER-OAUTH2-SERVER.test" options="-parameters" />
+      <module name="authorizationserver" options="-parameters" />
+      <module name="authorizationserver.main" options="-parameters" />
+      <module name="authorizationserver.test" options="-parameters" />
       <module name="categoryservice" options="-parameters" />
       <module name="categoryservice.main" options="-parameters" />
       <module name="categoryservice.test" options="-parameters" />
